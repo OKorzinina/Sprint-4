@@ -4,9 +4,7 @@ from main import BooksCollector
 
 class TestBooksCollector:
 
-    @pytest.fixture
-    def collector(self):
-        return BooksCollector()
+    
 
     # Проверяет, что новая книга добавляется в коллекцию.
     def test_add_new_book(self, collector):
