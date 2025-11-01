@@ -59,7 +59,7 @@ class TestBooksCollector:
         collector.set_book_genre('Звонок', 'Ужасы')
         assert collector.get_books_with_specific_genre(genre) == expected_books
 
-    # Проверяет, что возвращается список книг для детей (без учета "Ужасов").
+    # Проверяет, что возвращается список книг для детей.
     def test_get_books_for_children(self, collector):
         collector.add_new_book('Гарри Поттер')
         collector.set_book_genre('Гарри Поттер', 'Фантастика')
